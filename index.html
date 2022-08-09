@@ -13,67 +13,119 @@
 
 </head>
 <body>
+ <header class="header">
+  <nav class="container">
+   <a href="#" class="home-link">
+    <img src="images/logo.svg" alt="logo" class="logo">
+   </a>
+   <button class="nav__toggle nav__toggle--open">
+    <img src="images/icon-hamburger.svg" alt="open menu" class="nav__icon">
+   </button>
+   <button class="nav__toggle nav__toggle--close">
+    <img src="images/icon-close.svg" alt="close menu" class="nav__icon">
+   </button>
+   <ul class="nav__menu">
+    <li class="nav__menu-item"><a href="#" class="nav__link">How we work</a></li>
+    <li class="nav__menu-item"><a href="#" class="nav__link">Blog</a></li>
+    <li class="nav__menu-item"><a href="#" class="nav__link">Account</a></li>
+    <li class="nav__menu-item"><a href="#" class="nav__link btn btn--nav">View Plans</a></li>
+   </ul>
+  </nav>
 
-  How we work
-  Blog
-  Account
-  View plans
-
-  Humanizing your insurance.
-
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
-
-  View plans
-
-  We’re different
-
-  Snappy Process
-
-  Our application process can be completed in minutes, not hours. Don’t get 
+  <section class="hero">
+   <div class="hero__content">
+     <h1 class="title">Humanizing your insurance.</h1>
+     <p class="hero__text">
+      Get your life insurance coverage easier and faster. We blend our expertise 
+      and technology to help you find the plan that’s right for you. Ensure you 
+      and your loved ones are protected.
+     </p>
+     <a href="#" class="btn btn__primary">view plans</a>
+   </div>
+   <div class="hero__media">
+     <!-- will have backgrounds -->
+   </div>
+  </section>
+ </header>
+ <main class="main">
+  <section class="features-section">
+   <h2 class="features-section__title">We're different</h2>
+   <div class="features">
+    <article class="feature">
+     <img src="images/icon-snappy-process.svg" alt="snappy process" class="feature__image">
+     <h3 class="feature__title">Snappy Process</h3>
+     <p class="feature__content">
+      Our application process can be completed in minutes, not hours. Don’t get 
   stuck filling in tedious forms.
-
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
-
+     </p>
+    </article>
+    <!-- feature ends here -->
+    <article class="feature">
+     <img src="images/icon-affordable-prices.svg" alt="affordable prices" class="feature__image">
+     <h3 class="feature__title">Affordable Prices</h3>
+     <p class="feature__content">
+      We don’t want you worrying about high monthly costs. Our prices may be low, 
+      but we still offer the best coverage possible..
+     </p>
+    </article>
+    <!-- feature ends here -->
+    <article class="feature">
+     <img src="images/icon-people-first.svg" alt="people first" class="feature__image">
+     <h3 class="feature__title">People First</h3>
+     <p class="feature__content">
+      Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+      sure you’re covered when you need it.
+     </p>
+    </article>
+    <!-- feature ends here -->
+   </div>
+  </section>
+  <section class="cta-section">
+    <h2 class="cta-section__title">Find out more about how we work</h2>
+    <a href="#" class="btn btn--primary">how we work</a>
+  </section>
+ </main>
+ <footer class="footer">
+   <div class="container footer__connect">
+    <img src="images/logo.svg" alt="logo" class="footer__logo">
+    <div class="footer__icons">
+      <a href="#" class="footer__social-link"><img src="images/icon-facebook.svg" alt="facebook" class="footer__social-icon"></a><a href="#" class="footer__social-link"><img src="images/icon-twitter.svg" alt="twitter" class="footer__social-icon"></a><a href="#" class="footer__social-link"><img src="images/icon-pinterest.svg" alt="pintrest" class="footer__social-icon"></a><a href="#" class="footer__social-link"><img src="images/icon-instagram.svg" alt="instagram" class="footer__social-icon"></a>
+    </div>
+   </div>
+   <!-- footer connect ends here -->
+   <div class="footer__navigation">
+     <ul class="footer__menu">
+       <li class="footer__menu-item footer__menu-item--heading">Our Company</li>
+       <li class="footer__menu-item"><a href="#" class="footer__link">how we work</a></li>
+       <li class="footer__menu-item"><a href="#" class="footer__link">why Insure</a></li>
+       <li class="footer__menu-item"><a href="#" class="footer__link">view plans</a></li>
+       <li class="footer__menu-item"><a href="#" class="footer__link">reviews</a></li>
+     </ul>
+     <!-- menu ends here -->
+     <ul class="footer__menu">
+      <li class="footer__menu-item footer__menu-item--heading">Help me</li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">FAQ</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">terms of use</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">privacy policy</a></li>
+      <li class="footer__menu-item"><a href="#" class="footer__link">cookies</a></li>
+    </ul>
+    <!-- menu ends here -->
+    <ul class="footer__menu">
+     <li class="footer__menu-item footer__menu-item--heading">Contact</li>
+     <li class="footer__menu-item"><a href="#" class="footer__link">sales</a></li>
+     <li class="footer__menu-item"><a href="#" class="footer__link">support</a></li>
+     <li class="footer__menu-item"><a href="#" class="footer__link">live chat</a></li>
+   </ul>
+   <!-- menu ends here -->
+   <ul class="footer__menu">
+    <li class="footer__menu-item footer__menu-item--heading">Others</li>
+    <li class="footer__menu-item"><a href="#" class="footer__link">careers</a></li>
+    <li class="footer__menu-item"><a href="#" class="footer__link">press</a></li>
+    <li class="footer__menu-item"><a href="#" class="footer__link">licences</a></li>
+  </ul>
+  <!-- menu ends here -->
+   </div>
+ </footer>
   <script src="script.js"></script>
 </body>
 </html>
