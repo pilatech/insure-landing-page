@@ -7,6 +7,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Insure landing page</title>
@@ -14,7 +18,7 @@
 </head>
 <body>
  <header class="header">
-  <nav class="container">
+  <nav class="nav container">
    <a href="#" class="home-link">
     <img src="images/logo.svg" alt="logo" class="logo">
    </a>
@@ -34,13 +38,16 @@
 
   <section class="hero">
    <div class="hero__content">
-     <h1 class="title">Humanizing your insurance.</h1>
-     <p class="hero__text">
-      Get your life insurance coverage easier and faster. We blend our expertise 
-      and technology to help you find the plan that’s right for you. Ensure you 
-      and your loved ones are protected.
-     </p>
-     <a href="#" class="btn btn__primary">view plans</a>
+     <div class="container">
+       <h1 class="title">Humanizing your insurance.</h1>
+       <p class="hero__text">
+        Get your life insurance coverage easier and faster. We blend our expertise 
+        and technology to help you find the plan that’s right for you. Ensure you 
+        and your loved ones are protected.
+       </p>
+       <a href="#" class="btn btn__primary btn--hero">view plans</a>
+    </div>
+    <!-- container for text ends -->
    </div>
    <div class="hero__media">
      <!-- will have backgrounds -->
@@ -48,7 +55,7 @@
   </section>
  </header>
  <main class="main">
-  <section class="features-section">
+  <section class="features-section container">
    <h2 class="features-section__title">We're different</h2>
    <div class="features">
     <article class="feature">
@@ -80,7 +87,7 @@
     <!-- feature ends here -->
    </div>
   </section>
-  <section class="cta-section">
+  <section class="cta-section container">
     <h2 class="cta-section__title">Find out more about how we work</h2>
     <a href="#" class="btn btn--primary">how we work</a>
   </section>
@@ -93,7 +100,7 @@
     </div>
    </div>
    <!-- footer connect ends here -->
-   <div class="footer__navigation">
+   <div class="footer__navigation container">
      <ul class="footer__menu">
        <li class="footer__menu-item footer__menu-item--heading">Our Company</li>
        <li class="footer__menu-item"><a href="#" class="footer__link">how we work</a></li>

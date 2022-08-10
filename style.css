@@ -1,0 +1,253 @@
+*,
+*::before,
+*::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font: inherit;
+}
+
+:root {
+ font-size: 62.5%;
+ --color-bg: hsl(256, 26%, 20%);
+--color-icon-bg: hsl(216, 30%, 68%);
+--color-titles: hsl(270, 9%, 17%);
+--color-text: hsl(273, 4%, 51%);
+--color-footer-bg: hsl(0, 0%, 98%);
+--font-titles: 'DM Serif Display', serif;
+--font-body: 'Karla', sans-serif;
+}
+
+body {
+ font-family: var(--font-body);
+ font-size: 1.6rem;
+ line-height: 1.6;
+ text-align: center;
+}
+
+h1,
+h2,
+h3 {
+ font-family: var(--font-titles);
+ line-height: 1;
+ color: var(--color-titles);
+}
+
+.container {
+ width: 90%;
+ max-width: 40rem;
+ margin-inline: auto;
+}
+
+.nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-block: 3rem;
+}
+
+.nav__toggle {
+ cursor: pointer;
+ background: transparent;
+ border: none;
+}
+
+.nav__icon {
+ display: block;
+}
+
+.nav__toggle--close {
+ display: none;
+}
+
+.nav__menu {
+  background: url(images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: var(--color-titles);
+  position: absolute;
+  background-size: 100%;
+  inset: 0;
+  top: 9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding:6rem 3.5rem;
+  list-style: none;
+  min-height: 100vh;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.nav.active .nav__menu {
+ opacity: 1;
+ visibility: visible;
+ transition: opacity .2s;
+}
+
+.nav__menu-item {
+ margin-bottom: 2.5rem;
+}
+
+.nav__link {
+ text-decoration: none;
+ color: #fff;
+}
+
+.hero {
+ display: flex;
+ flex-direction: column-reverse;
+}
+
+.hero__media {
+ height: 55rem;
+ background: url(images/image-intro-mobile.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: bottom;
+}
+
+.hero__content {
+ background: 
+ url(images/bg-pattern-intro-left-mobile.svg),
+ url(images/bg-pattern-intro-right-mobile.svg),
+ linear-gradient(var(--color-bg), var(--color-bg));
+ background-position: top left, bottom right, left -18rem;
+ background-repeat: no-repeat;
+ color: #fff;
+ padding-top: 10rem;
+ padding-bottom: 18rem;
+}
+
+.title {
+ font-size: 4.5rem;
+ margin-bottom: 3rem;
+ color: #fff;
+}
+
+.hero__text {
+ margin-bottom: 3rem;
+}
+
+.btn {
+ color: #fff;
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ border: 2px solid;
+ padding: 1.2rem;
+ display: block;
+ margin-inline: auto;
+ width: 55%;
+}
+
+.btn--nav {
+ margin-top: 4rem;
+ width: 90%;
+}
+
+.btn--hero {
+ margin-bottom: 10rem
+}
+
+.btn--hero::after {
+ content: '';
+ width: calc(100%);
+ background: var(--color-text);
+ display: block;
+ height: 1px;
+ transform: translate(0, 25rem)
+}
+
+.features-section__title {
+ font-size: 4.5rem;
+ margin-bottom: 8rem;
+}
+
+.feature {
+ margin-bottom: 6rem;
+ color: var(--color-text);
+}
+
+.feature__image {
+ margin-bottom: 4rem;
+}
+
+.feature__title {
+ margin-bottom: 3rem;
+ font-size: 3.2rem;
+}
+
+.cta-section {
+ background:
+ url(images/bg-pattern-how-we-work-mobile.svg),
+ linear-gradient(var(--color-bg), var(--color-bg));
+ background-repeat: no-repeat;
+ background-position: right;
+ padding: 5.5rem 4rem;
+ margin-block: 18rem;
+}
+
+.cta-section__title {
+ color: #fff;
+ font-size: 3.8rem;
+ margin-bottom: 4rem;
+}
+
+.footer {
+ padding-bottom: 6rem;
+ background: url(images/bg-pattern-footer-mobile.svg);
+ background-position: top center;
+ background-repeat: no-repeat;
+ background-size: 100% 18rem;
+ background-color: var(--color-footer-bg);
+}
+
+.footer__connect {
+ padding-bottom: 3rem;
+ padding-top: 6rem;
+ margin-bottom: 3.5rem;
+ border-bottom: 1px solid var(--color-text);
+ 
+}
+
+.footer__logo {
+ margin-bottom: 2.5em;
+}
+
+.footer__icons {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 1.5rem;
+}
+
+.footer__menu {
+ margin-bottom: 3rem;
+ list-style: none;
+ text-transform: uppercase;
+ font-weight: 700;
+}
+
+.footer__menu-item {
+ margin-bottom: 1rem;
+}
+
+.footer__menu-item--heading {
+ color: var(--color-icon-bg);
+ margin-bottom: 2.5rem;
+}
+
+.footer__link {
+ color: var(--color-titles);
+ text-decoration: none;
+}
+
+
+
+
+
+
+
+
