@@ -427,6 +427,7 @@ h3 {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: initial;
+  background-color: var(--color-footer-bg);
  }
  
  .footer__connect {
